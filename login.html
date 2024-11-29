@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(bg.jpg);
+            background-size: cover;
+        }
+        .main{
+            width: 35%;
+            background-color: rgb(15, 110, 193);
+            box-shadow: 10px 10px 6px black;
+        }
+        .child1{
+            background-image: url(bg.jpg);
+            height: 300px;
+            background-size: cover;
+        }
+        .child2{
+          padding: 10%;
+        }
+        input[type="text"]{
+            border-radius: 15px;
+            width: 100%;
+            background-color: rgb(14, 107, 188);
+            border: none;
+            height: 25px;
+            color: white;
+
+        }
+        input[type="password"]
+        {
+            border-radius: 15px;
+            width: 100%;
+            background-color: rgb(14, 107, 188);
+            border: none;
+            height: 25px;
+            color: white;
+        }
+
+        input[type="button"]
+        {
+            width: 100%;
+            background-color: rgb(14, 107, 188);
+            height: 25px;
+            color:white;
+        }
+        .child3{
+            text-align: center;
+        }
+        .section{
+            display: flex;
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+    <div class="main">
+        <div class="child1">
+
+        </div>
+        <div class="child2">
+           <h1>Login</h1><br>
+           <input type="text" name="Username" id="username" value="" placeholder="Username"><br><br>
+           <input type="password" name="Password" id="username" value="" placeholder="Password"><br><br>
+           <div class="section">
+           <div>
+           <input type="checkbox" name="" id="">
+            Remember me
+           </div>
+           <a href="">forgot password?</a>
+           </div><br>
+           <input type="button" value="Login"><br><br>
+           <div class="child3"> 
+            <a href="" class="create">Create account</a>
+           </div>
+           
+        </div>
+    </div>
+   </center>
+
+</body>
+</html>

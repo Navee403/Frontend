@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+     .color{
+        color: blanchedalmond;
+     }
+     body{
+        background-color: coral;
+     }
+
+    </style>
+</head>
+<body>
+    <h1 class="color">Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <p class="color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, ratione odio facilis corrupti laborum id eaque, eveniet accusamus dolorem ea reiciendis eius perferendis ad rem fugiat cum aliquid dignissimos accusantium.</p>
+    <a href="https://www.youtube.com/watch?v=OVdhyqcIcik&list=PLoLheMOg8xiPkGj--LDSHZXuhTH5E4n8y">Walk through Youtube</a>
+    <br>
+    <a href="https://www.akcodes.in" target="_blank">Visit Akcodes</a>
+    <br>
+    <img src="RCB.avif" alt="RED ARMY" height="200px" width="200px">
+          <p>This text is normal.</p>
+          <p><b>This text is bold.</b></p>
+          <p><strong>This is Important text.</strong></p>
+          <p><i>This is italic text.</i></p>
+          <p><em>This is Emphasized text.</em></p>
+          <p><mark>This is Marked text</mark></p>
+          <p><small>This is smaller text.</small></p>
+          <p><del>This is deleted text.</del></p>
+          <p><ins>This is Inserted text</ins></p>
+          <p>CO<sub>2</sub>  <s> </s>   H<sub>2</sub>O</p>
+          <p>x<sup>2</sup>+2ab+b<sup>2</sup></p>
+          <table border="3">
+            <thead>
+                <tr>
+                    <th>Sr No.</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Naveen</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Navya</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Kavya</td>
+                    <td>23</td>
+                </tr>
+            </thead>
+          </table>
+        <ul type="square">
+            <li>car</li>
+            <li>Bus</li>
+            <li>Van</li>
+        </ul>
+        <ol type="I" start="8">
+            <li>Education</li>
+            <li>Job</li>
+            <li>Money</li>
+        </ol>
+        <br>
+        <form action=" "></form>
+        <Label for="username">User Name:</Label>
+        <input type="text" id="username" name="username" value="" placeholder="Enter your name">
+        <br>
+        <br>
+        <Label for="password">Password:</Label>
+        <input type="password" id="pasword" name="password" value="" placeholder="Enter pasword">
+        <br>
+        <br>
+        <label>Did you like this session:</label>
+        <Label for="checkbox">Yes</Label>
+        <input type="checkbox" id="checkbox" name="password" value="">
+        <Label for="no">No</Label>
+        <input type="checkbox" id="no" name="password" value="">
+        <br>
+        <br>
+
+         <label>Gender:</label>
+        <Label for="Male">Male</Label>
+        <input type="radio" id="male" name="gender" value="" >
+        <Label for="Female">Female</Label>
+        <input type="radio" id="Female" name="gender" value="" >
+        <Label for="other">Other</Label>
+        <input type="radio" id="other" name="gender" value="" >
+        <br><br>
+
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color"><br><br>
+        <br><br>
+
+        <!-- File Input -->
+        <label for="avatar">Avatar (Image):</label>
+        <input type="file" id="avatar" name="avatar"><br><br>
+
+        <!-- Hidden Input -->
+        <input type="hidden" id="user_id" name="user_id" value="12345">
+
+        <!-- Image Input -->
+        <!-- <label for="profile_pic">Profile Picture (Image):</label>
+        <input type="image" id="profile_pic" name="profile_pic" src="default.jpg" alt="Profile Picture"><br><br> -->
+
+        <!-- Month Input -->
+        <label for="anniversary">Anniversary Month:</label>
+        <input type="month" id="anniversary" name="anniversary"><br><br>
+
+        <!-- Number Input -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100"><br><br>
+
+        <!-- Range Input -->
+        <label for="rating">Rating:</label>
+        <input type="range" id="rating" name="rating" min="1" max="10"><br><br>
+
+        <!-- Reset and Submit Buttons -->
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit"><br><br>
+
+        <!-- Search Input -->
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search"><br><br>
+
+        <!-- Tel Input -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <!-- Time Input -->
+        <label for="meeting_time">Preferred Meeting Time:</label>
+        <input type="time" id="meeting_time" name="meeting_time"><br><br>
+
+        <!-- URL Input -->
+        <label for="website">Website URL:</label>
+        <input type="url" id="website" name="website"><br><br>
+
+        <!-- Week Input -->
+        <label for="vacation_week">Vacation Week:</label>
+        <input type="week" id="vacation_week" name="vacation_week"><br><br>
+
+        <!-- Textarea -->
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Select Options -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+        </select><br><br>
+
+        <!-- Select Optgroup -->
+        <label for="city">City:</label>
+        <select id="city" name="city">
+            <optgroup label="USA">
+                <option value="nyc">New York City</option>
+                <option value="la">Los Angeles</option>
+            </optgroup>
+            <optgroup label="Canada">
+                <option value="toronto">Toronto</option>
+                <option value="vancouver">Vancouver</option>
+            </optgroup>
+            <optgroup label="UK">
+                <option value="london">London</option>
+                <option value="manchester">Manchester</option>
+            </optgroup>
+        </select><br><br>
+
+
+      </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button  id="btn"  onmouseover="Hover()" onmouseleave="Leave()" ondblclick="Double()">Click Me</button>
+    <h1>Simple Form Validation</h1>
+    <form onsubmit="return validateForm()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username">
+        <span id="usernameError" class="error"></span>
+         <br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Enter your email">
+        <span id="emailError" class="error"></span>
+         <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password">
+        <span id="passwordError" class="error"></span>
+         <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        function validateForm() {
+            const username=document.getElementById("username");
+            const email=document.getElementById("email");
+            const password=document.getElementById("password");
+
+            const usernameError=document.getElementById("usernameerror");
+            const emailError=document.getElementById("emailError");
+            const passwordError=document.getElementById("passwordError");
+            
+            usernameError.textContent="";
+            emailError.textContent="";
+            passwordError.textContent="";
+
+            let isVlaid=true;
+
+            if(username===""){
+                usernameError.textContent="Username can not be empty";
+                isVlaid=false;
+            }
+
+            if(email===""){
+                emailError.textContent="Email can not be empty";
+            }elseif((@)===-1||)
+        }
+    </script>
+</body>
+</html>
